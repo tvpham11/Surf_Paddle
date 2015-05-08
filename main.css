@@ -3,12 +3,19 @@
   height: 2100px;
 }
 
+/** {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}*/
+
 header {
   height: 515px;
   background: url(images/header.jpg);
 }
 
 .top {
+  width: 100%;
   padding-bottom: 100px;
   margin: auto;
 }
@@ -19,8 +26,21 @@ header {
   font-size: 20px;
   float: left;
   position: relative;
-  margin-left: 150px;
+  margin-left: 138px;
   margin-top: 10px;
+}
+
+.logoblog img {
+  float: left;
+  margin-right: 5px;
+}
+
+.logoblog h4 {
+  float: left;
+  margin: 10px;
+  color: #0A3450;
+  font-size: 0.9em;
+  font-weight: bolder;
 }
 
 .aboutsearch {
@@ -28,14 +48,23 @@ header {
   float: right;
   position: relative;
   color: #07304A;
-  margin-right: 155px;
+  margin-right: 154px;
+  padding-top: 10px;
 }
 
 .aboutsearch h4 {
   font-family: 'Oswald', sans-serif;
   font-size: large;
-  font-weight: 200px;
+  font-weight: 150px;
   margin-left: 10px;
+  margin-top: 10px;
+  float: left;
+}
+
+.aboutsearch img {
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
 .center {
@@ -48,35 +77,42 @@ header {
   color: white;
   font-size: 100px;
   font-weight: bold;
+  padding-top: 10px;
   padding-bottom: 0px;
-  margin: auto;
+  padding-left: 21px;
+  margin-right: 10px;
+  margin-bottom: -9px;
 }
 
-.center h5 {
+.center h4 {
   color: #0B3654;
-  font-weight: 10px;
+  font-size: .9em;
+  font-weight: bolder;
+  padding-top: 0;
   margin-top: 0;
+  margin-left: -15px;
 }
 
 .middle {
   width: 100%;
-  margin: auto;
   position: absolute;
 }
 
 .leftmargin {
   width: 10%;
-  height: 1008px
+  height: 1008px;
   float: left;
+  position: relative;
 }
 
 .rightmargin {
   width: 10%;
   height: 1008px;
   float: right;
+  position: relative;
 }
 
-.middle h2 {
+article h2 {
   color: #0A3451;
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
@@ -85,20 +121,21 @@ header {
   margin-top: 64px;
 }
 
-.article {
-  float: relative;
+article {
+  float: left;
   width: 54%;
 }
 
-.entrybody p {
+/*.entrybody p {
   color: #677077;
-}
+}*/
 
 .popposts {
   width: 100%;
   height: 480px;
   border-top: 2px solid #E4E9EC;
   position: relative;
+  float: left;
 }
 
 .popposts h2 {
@@ -112,19 +149,53 @@ header {
   text-align: center;
 }
 
-.popposts .post {
+/*.posts {
   height: 330px;
   margin: 0;
   float: left;
   position: relative;
 }
 
+#1 {
+  width: 24.38%;
+  background: url(images/article-image-1.jpg);
+}
 
+#2 {
+  width: 25.23%;
+  background: url(images/article-image-2.jpg);
+}
+
+#3 {
+  width: 25.63%;
+  background: url(images/article-image-3.jpg);
+}
+
+#4 {
+  width: 24.76%;
+  background: url(images/article-image-4.jpg);
+}*/
+
+.bottom {
+  width: 100%;
+}
 
 footer {
-  height: 50px;
+  height: 95px;
   line-height: 50px;
   font-size: 1.5em;
   text-align: center;
   background-color: #083452;
+  position: absolute;
+  display: inline-block;
+  float: left;
+}
+
+nav {
+  height: 95px;
+  line-height: 50px;
+  background-color: #083452;
+  position: relative;
+  display: inline-block;
+  float: right;
 }
