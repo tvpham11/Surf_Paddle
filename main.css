@@ -1,12 +1,16 @@
-header {
+.container {
   width: 100%;
+  height: 2100px;
+}
+
+header {
   height: 515px;
   background: url(images/header.jpg);
-  position: absolute;
 }
 
 .top {
   padding-bottom: 100px;
+  margin: auto;
 }
 
 .logoblog {
@@ -54,8 +58,100 @@ header {
   margin-top: 0;
 }
 
-.blogentry {
+.middle {
+  width: 100%;
   margin: auto;
+  position: absolute;
+}
+
+.leftmargin {
+  width: 10%;
+  height: 1008px
+  float: left;
+}
+
+.rightmargin {
+  width: 10%;
+  height: 1008px;
+  float: right;
+}
+
+.middle h2 {
+  color: #0A3451;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 4.5em;
+  padding: 0px;
+  margin-top: 64px;
+}
+
+.article {
+  float: relative;
+  width: 54%;
+}
+
+.entrybody p {
+  color: #677077;
+}
+
+.popposts {
+  width: 100%;
+  height: 480px;
+  border-top: 2px solid #E4E9EC;
+  position: relative;
+}
+
+.popposts h2 {
+  color: #0A3451;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 4em;
+  padding: 0px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/*.popposts.posts {
+  height: 330px;
+  position: relative;
+  float: left;
+}
+*/
+#post1 {
+  height: 330px;
+  position: relative;
+  float: left;
+/*  width: 24.38%;*/
+  width: 320px;
+  background: url(images/article-image-1.jpg);
+}
+
+#post2 {
+  height: 330px;
+  position: relative;
+  float: left;
+/*  width: 25.23%;*/
+  width: 320px;
+  background: url(images/article-image-2.jpg);
+}
+
+#post3 {
+  height: 330px;
+  position: relative;
+  float: left;
+/*  width: 25.63%;*/
+  width: 320px;
+  background: url(images/article-image-3.jpg);
+}
+
+#post4 {
+  height: 330px;
+  position: relative;
+  float: left;
+/*  width: 24.76%;*/
+  width: 320px;
+  background: url(images/article-image-4.jpg);
 }
 
 footer {
@@ -63,5 +159,5 @@ footer {
   line-height: 50px;
   font-size: 1.5em;
   text-align: center;
-  background-color: #345;
+  background-color: #083452;
 }
