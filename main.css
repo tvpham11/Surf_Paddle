@@ -86,11 +86,11 @@ header {
 
 .center h4 {
   color: #0B3654;
-  font-size: .9em;
+  font-size: medium;
   font-weight: bolder;
   padding-top: 0;
   margin-top: 0;
-  margin-left: -15px;
+  margin-left: -12px;
 }
 
 .middle {
@@ -126,9 +126,12 @@ article {
   width: 54%;
 }
 
-/*.entrybody p {
-  color: #677077;
-}*/
+.entrybody p {
+  color: #677177;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+}
 
 .popposts {
   width: 100%;
