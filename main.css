@@ -112,47 +112,14 @@ header {
   text-align: center;
 }
 
-/*.popposts.posts {
+.popposts .post {
   height: 330px;
-  position: relative;
+  margin: 0;
   float: left;
-}
-*/
-#post1 {
-  height: 330px;
   position: relative;
-  float: left;
-/*  width: 24.38%;*/
-  width: 320px;
-  background: url(images/article-image-1.jpg);
 }
 
-#post2 {
-  height: 330px;
-  position: relative;
-  float: left;
-/*  width: 25.23%;*/
-  width: 320px;
-  background: url(images/article-image-2.jpg);
-}
 
-#post3 {
-  height: 330px;
-  position: relative;
-  float: left;
-/*  width: 25.63%;*/
-  width: 320px;
-  background: url(images/article-image-3.jpg);
-}
-
-#post4 {
-  height: 330px;
-  position: relative;
-  float: left;
-/*  width: 24.76%;*/
-  width: 320px;
-  background: url(images/article-image-4.jpg);
-}
 
 footer {
   height: 50px;
