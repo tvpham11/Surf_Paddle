@@ -116,6 +116,10 @@ header {
   position: relative;
 }
 
+.blogentry {
+  position: relative;
+}
+
 article h2 {
   color: #0A3451;
   font-family: 'Oswald', sans-serif;
@@ -190,9 +194,10 @@ article {
 
 .post:hover:after {
   opacity: 0;
+  color: white;
 }
 
-.post span {
+.posttitle {
   font-family: 'Oswald', sans-serif;
   font-size: 2em;
   color: black;
@@ -201,13 +206,20 @@ article {
   left: 10px;
 }
 
-.post.posttitle:hover:after {
+/*
+.posttitle:hover:after {
+  font-size: 100em;
   color: white;
 }
+*/
 
 #a.post {
   width: 24.38%;
   background-image: url(images/article-image-1.jpg);
+}
+
+#a1.posttitle:hover:after{
+  color: white;
 }
 
 #b.post {
