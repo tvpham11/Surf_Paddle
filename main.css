@@ -49,7 +49,7 @@ header {
   float: right;
   position: relative;
   color: #07304A;
-  margin-right: 154px;
+  margin-right: 148px;
   padding-top: 10px;
 }
 
@@ -87,11 +87,11 @@ header {
 
 .center h4 {
   color: #0B3654;
-  font-size: medium;
-  font-weight: bolder;
+  font-size: .95em;
+  letter-spacing: .35px;
   padding-top: 0;
-  margin-top: 0;
-  margin-left: -12px;
+  margin-top: -15px;
+  margin-left: 14px;
 }
 
 /*MIDDLE*/
@@ -103,35 +103,50 @@ header {
 }
 
 .leftmargin {
-  width: 10%;
+  width: 12%;
   height: 1008px;
-  float: left;
   position: relative;
+  float: left;
+  display: block;
 }
 
 .rightmargin {
-  width: 10%;
+  width: 12%;
   height: 1008px;
-  float: right;
   position: relative;
+  float: right;
+  display: block;
 }
 
 .blogentry {
   position: relative;
+  float: left;
+  width: 50%;
+  margin-left: 4px;
+}
+
+.entrytitle {
+  margin-top: 64px;
 }
 
 article h2 {
   color: #0A3451;
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
-  font-size: 4.5em;
+  font-size: 4.1em;
   padding: 0px;
-  margin-top: 64px;
+  margin: 0px 15px;
 }
 
-article {
-  float: left;
-  width: 54%;
+.writer img {
+  width: 22px;
+  height: 22px;
+}
+
+.writer span {
+  font-size: .8em;
+  color: #2675B3;
+  margin-left: 4px;
 }
 
 .entrybody p {
@@ -139,6 +154,68 @@ article {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   font-weight: bold;
+}
+
+.buttons {
+  display: inline-block;
+  position: relative;
+  float: left;
+  height: 19px;
+  padding: 5px;
+}
+
+.buttons img {
+  width: 19px;
+}
+
+.buttons span {
+  color: white;
+}
+
+.readcomments {
+  width: 160px;
+  display: inline-block;
+  position: absolute;
+  float: left;
+}
+
+.readcomments img {
+  background-color: #5E686F
+}
+
+.readcomments span {
+
+}
+
+.readlater {
+  width: 128px;
+}
+
+.readlater img {
+  background-color: #5E686F;
+}
+
+.readlater span {
+
+}
+
+.sharethispost {
+
+}
+
+.sharethispost img {
+
+}
+
+.sharethispost span {
+
+}
+
+aside {
+  width: 25%;
+  position: relative;
+  float: left;
+  display: block;
 }
 
 /*LOWER MIDDLE*/
@@ -205,13 +282,6 @@ article {
   bottom: 10px;
   left: 10px;
 }
-
-/*
-.posttitle:hover:after {
-  font-size: 100em;
-  color: white;
-}
-*/
 
 #a.post {
   width: 24.38%;
@@ -285,8 +355,8 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: #9DADB9;
   border-right: 1px solid #9DADB9;
   padding-right: 4px;
-  margin: 0;
+  font-size: .81em;
+  color: #9DADB9;
 }
