@@ -283,6 +283,10 @@ aside {
   left: 10px;
 }
 
+.posttitle:hover {
+  color: white;
+}
+
 #a.post {
   width: 24.38%;
   background-image: url(images/article-image-1.jpg);
