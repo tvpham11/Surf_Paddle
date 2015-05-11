@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Surf &amp; Paddle Co.</title>
+  <title>Surf &amp; Paddle</title>
 
   <!-- Normalize CSS -->
   <link rel="stylesheet" type="text/css" href="normalize.css">
 
   <!-- Google Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
 
   <!-- Main CSS -->
   <link rel="stylesheet" type="text/css" href="main.css">
@@ -24,8 +24,8 @@
           <h4>SURF &amp; PADDLE CO. BLOG</h4>
         </div>
         <div class="aboutsearch">
-          <h4>ABOUT</h4>
-          <h4>SEARCH</h4>
+          <a href="#">ABOUT</a>
+          <a href="#">SEARCH</a>
           <img src="images/search-icon.png" alt="search">
         </div>
       </div>
@@ -61,15 +61,14 @@
             </div>
 
             <div class="entrybody">
-              <p>Locavore ea meggings, deep v gentrify bespoke butcher yr typewriter. Nisi sunt 8-bit craft beer, leggings deep v biodiesel Williamburg. Actually hashtag art party nesciunt squid pour-over. Kitsch Vice cray. Marfa brunch fingerstache officia Schlitz Blue Bottle cillum. Mlkshk 8-bit aliquip fingerstache sunt.</p>
-
-              <p>Distillery ad sriracha, synth wolf street art brunch excepteur consectetur art party irony fugiat. Duis chia yr, pour-over Portland velit High Life non aestetic fugiat tattooed shabby <a href="#">chic mixtape</a>.</p>
+              <p id="first">Locavore ea meggings, deep v gentrify bespoke butcher yr typewriter. Nisi sunt 8-bit craft beer, leggings deep v biodiesel Williamburg. Actually hashtag art party nesciunt squid pour-over. Kitsch Vice cray. Marfa brunch fingerstache officia Schlitz Blue Bottle cillum. Mlkshk 8-bit aliquip fingerstache sunt.</p>
+              <p id="second">Distillery ad sriracha, synth wolf street art brunch excepteur consectetur art party irony fugiat. Duis chia yr, pour-over Portland velit High Life non aestetic fugiat tattooed shabby <a href="#" class="entrybodylink">chic mixtape</a>.</p>
 
               <h4>WOAH, THAT'S RADICAL!</h4>
 
-              <p>Swag nisi mixtape cray, non hashtag blog tote bag dolor bitters before they sold out ea dolore. Raw denim mixtape drinking vinegar, Vice 3 wolf moon authentic officia aute id. Keffiyeh yr retro, salvia do<a href="#">aliqua (rollover></a> leggings selvage narwhal farm-to-table dolor Tonx DIY photo booth. Bitters gastropub non 3 wolf moon Blue Bottle organic, cray aesthetic jean shorts velit umami. Mlkshk roof party cardigan, farm-to-table aute plaid wolf master cleanse. Thundercats tattooed lo-fi culpa, mollit Pinterest American Apparel. 3 wolf moon VHS hella, Tonx beard chambray sustainable jean shorts synth mlkshk fugiat excepteur banh mi eu whatever</p>
+              <p id="third">Swag nisi mixtape cray, non hashtag blog tote bag dolor bitters before they sold out ea dolore. Raw denim mixtape drinking vinegar, Vice 3 wolf moon authentic officia aute id. Keffiyeh yr retro, salvia do <a href="#" class="entrybodylink">aliqua (rollover)</a> leggings selvage narwhal farm-to-table dolor Tonx DIY photo booth. Bitters gastropub non 3 wolf moon Blue Bottle organic, cray aesthetic jean shorts velit umami. Mlkshk roof party cardigan, farm-to-table aute plaid wolf master cleanse. Thundercats tattooed lo-fi culpa, mollit Pinterest American Apparel. 3 wolf moon VHS hella, Tonx beard chambray sustainable jean shorts synth mlkshk fugiat excepteur banh mi eu whatever</p>
 
-              <p>Vinyl sartorial culpa bespoke labore, ethical readymade tofu selfies ut locavore commodo mumblecore paleo typewriter. Mumblecore selfies nostrud, asymmetrical 90's fanny pack est Blue Bottle ethnic blog. Narwhal Shoreditch fixie tofu, nisi before</p>
+              <p id="fourth">Vinyl sartorial culpa bespoke labore, ethical readymade tofu selfies ut locavore commodo mumblecore paleo typewriter. Mumblecore selfies nostrud, asymmetrical 90's fanny pack est Blue Bottle ethnic blog. Narwhal Shoreditch fixie tofu, nisi before</p>
             </div>
           </article>
 
@@ -93,9 +92,11 @@
           <div class="author">
             <img src="images/avatar.png" alt="Anne Marie">
             <span>ANNE MARIE</span>
-            <a href="#">Twitter</a>
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
+            <div class="socialmedia">
+              <a href="#">Twitter</a>
+              <a href="#">Facebook</a>
+              <a href="#">Instagram</a>
+            </div>
           </div>
 
           <div class="ad">
@@ -105,7 +106,7 @@
 
           <div class="sidebar">
             <h6>SIDEBAR SECTION HEADING</h6>
-            <p>Distillery ad sriracha, synth wolf street art brunch excepteur consecteur art party irony fugiat. Duis chia yr, pour-over Portland velit High Life non aesthetic fugiat tattooed shabby <a href="#">chic mixtape</a> ethical cornhole mustache roof party proident aesthetic hoodie.</p>
+            <p>Distillery ad sriracha, synth wolf street art brunch excepteur consecteur art party irony fugiat. Duis chia yr, pour-over Portland velit High Life non aesthetic fugiat tattooed shabby <a href="#">chic mixtape.</a> ethical cornhole mustache roof party proident aesthetic hoodie.</p>
           </div>
         </aside>
       </div>
@@ -114,18 +115,19 @@
       <h2>MOST POPULAR POSTS</h2>
       <div class="posts">
         <div class="post" id="a">
-          <!-- <a href="#">ANOTHER COOL POST</a> -->
+          <a href="#"><img src="images/article-image-1.jpg" alt="Go to Another Cool Post!"></a>
           <span class="posttitle" id="a1">ANOTHER COOL POST</span>
         </div>
         <div class="post" id="b">
-        <!-- <a href="#">POST TITLE</a> -->
+          <a href="#"><img src="images/article-image-2.jpg" alt="Go to Post Title!"></a>
           <span class="posttitle">POST TITLE</span>
         </div>
         <div class="post" id="c">
-        <!-- <a href="#">HERE'S ANOTHER LONGER POST TITLE</a> -->
+          <a href="#"><img src="images/article-image-3.jpg" alt="Go to Here's Another Longer Post Title!"></a>
           <span class="posttitle">HERE'S ANOTHER LONGER POST TITLE</span>
         </div>
         <div class="post" id="d">
+          <a href="#"><img src="images/article-image-4.jpg" alt="Oh Cool, A Post!"></a>
           <span class="posttitle">OH COOL A POST!</span>
         </div>
       </div>
@@ -139,10 +141,10 @@
         <span>The Iron Yard Copyright 2015, All Rights Reserved</span>
       </footer>
       <nav>
-        <a href="#">Nav Item 1</a>
-        <a href="#">Nav Item 2</a>
-        <a href="#">Nav Item 3</a>
-        <a href="#">Nav Item 5</a>
+        <a href="#" id="item1">Nav Item 1</a>
+        <a href="#" id="item2">Nav Item 2</a>
+        <a href="#" id="item3">Nav Item 3</a>
+        <a href="#" id="item5">Nav Item 5</a>
       </nav>
     </div>
 
