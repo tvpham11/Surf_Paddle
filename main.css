@@ -223,6 +223,10 @@ article h2 {
   margin-bottom: 30px;
 }
 
+.buttons {
+  text-decoration: none;
+}
+
 .entrybody h4 {
   color: #0C63AB;
   font-size: 1.6em;
@@ -234,29 +238,45 @@ article h2 {
 }
 
 .buttons {
-  position: relative;
-  float: left;
-  height: 19px;
-  padding: 5px;
+  height: 30px;
 }
 
 .buttons img {
-  width: 20px;
-  padding: 4px;
+  background-color: #5E686F;
+  padding: 7px;
+  margin-left: 4px;
+  float: left;
+  display: block;
 }
 
 .buttons span {
+  padding: 5.5px 14px 5.5px 15px;
+  margin-right: 5px;
+  background-color: #A4B3BE;
+  font-family: 'Open Sans', sans-serif;
+  font-size: .85em;
+  text-align: center;
+  float: left;
+  display: block;
   color: white;
 }
 
-.readcomments {
+.buttons:hover img {
+  background-color: #083452;
+}
+
+.buttons:hover span {
+  background-color: #106DB3;
+}
+
+/*.readcomments {
   width: 160px;
   display: inline-block;
   position: relative;
   float: left;
-}
+}*/
 
-.readcomments img {
+/*.readcomments img {
   background-color: #5E686F;
   padding: 3px;
 }
@@ -267,9 +287,9 @@ article h2 {
   font-size: .85em;
   text-align: center;
   padding: 5px 15px;
-}
+}*/
 
-.readlater {
+/*.readlater {
   width: 128px;
   display: inline-block;
   position: relative;
@@ -290,7 +310,7 @@ article h2 {
 }
 
 .sharethispost {
-  width: 155px
+  width: 155px;
   display: inline-block;
   position: relative;
   float: left;
@@ -306,7 +326,7 @@ article h2 {
   font-size: .85em;
   text-align: center;
   padding: 5px 15px;
-}
+}*/
 
 aside {
   width: 30%;
