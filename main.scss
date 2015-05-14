@@ -1,0 +1,494 @@
+$openSans: 'Open Sans', sans-serif;
+$oswald: 'Oswald', sans-serif;
+
+$darkGray: #9DADB9;
+$gray: #0B3654;
+$mediumGray: #687177;
+$lightGray: #B1BFC8;
+$lightGray2: #687177;
+$imgGray: #5E686F;
+$buttonGray: #A4B3BE;
+$navyBlue: #083452;
+$blue: #2675B3;
+$darkishBlue: #687177;
+$diffBlue: #687177;
+$hoverBlue: #106DB3;
+$postBlue: #1E73B6;
+
+$fullWidth: 100%;
+
+@mixin marginDimensions() {
+    height: 1008px;
+    position: relative;
+    float: right;
+    display: block;
+}
+
+.container {
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*TOP*/
+
+header {
+  height: 522px;
+  background: url(images/header.jpg);
+
+  .top {
+    width: $fullWidth;
+    padding-bottom: 100px;
+    margin: auto;
+
+    .logoblog {
+      display: inline-block;
+      font-family: $openSans;
+      font-size: 20px;
+      font-weight: lighter;
+      float: left;
+      position: relative;
+      margin-left: 138px;
+      margin-top: 10px;
+    }
+
+    .logoblog img {
+      float: left;
+      margin-right: 5px;
+    }
+
+    .logoblog h4 {
+      float: left;
+      margin: 10px;
+      font-family: $openSans;
+      color: $navyBlue;
+      font-size: 0.85em;
+      font-weight: 600;
+      letter-spacing: -1px;
+    }
+
+    .aboutsearch {
+      display: inline-block;
+      float: right;
+      position: relative;
+      color: $navyBlue;
+      margin-right: 145px;
+      margin-top: 7px;
+    }
+
+    .aboutsearch a {
+      font-family: $oswald;
+      font-size: large;
+      text-decoration: none;
+      color: $navyBlue;
+      font-weight: 400;
+      margin-left: 8px;
+      margin-right: 8px;
+      margin-top: 10px;
+      float: left;
+    }
+
+    .aboutsearch img {
+      float: left;
+      margin-left: 0px;
+      margin-top: 12px;
+    }
+  }
+
+  .center {
+    text-align: center;
+    margin-top: 80px;
+
+    .center h1 {
+      color: white;
+      font-family: $openSans;
+      font-size: 6em;
+      font-weight: 400;
+      letter-spacing: .5px;
+      padding-top: 14px;
+      padding-bottom: 0px;
+      padding-left: 26px;
+      margin-right: 15px;
+      margin-bottom: 0;
+    }
+
+    .center h4 {
+      color: $gray;
+      font-family: $openSans;
+      font-size: .9em;
+      font-weight: 600;
+      letter-spacing: .25px;
+      padding-top: 0;
+      margin-top: -12px;
+      margin-left: 14px;
+    }
+  }
+}
+
+/*MIDDLE*/
+
+.middle {
+  width: $fullWidth;
+  position: relative;
+  float: left;
+
+  .leftmargin {
+    width: 12%;
+    @include marginDimensions();
+  }
+
+  .rightmargin {
+    width: 8%;
+    @include marginDimensions();
+  }
+
+  .blogentry {
+  position: relative;
+  float: left;
+  width: 47.5%;
+  margin-left: 10px;
+  }
+
+  .entrytitle {
+  margin-top: 65px;
+  }
+
+  article h2 {
+    color: $navyBlue;
+    font-family: $oswald;
+    font-weight: 400;
+    font-size: 4em;
+    letter-spacing: -1px;
+    margin: 0;
+    line-height: 70px;
+  }
+
+  .entrywriterdate {
+    margin-top: 4px;
+    margin-left: 2px;
+  }
+
+  .writer {
+    display: inline-block;
+    height: 22px;
+  }
+
+  .writer img {
+    width: 22px;
+  }
+
+  .writer span {
+    color: $blue;
+    font-family: $openSans;
+    font-size: .8em;
+    margin-left: 4px;
+    margin-right: 15px;
+  }
+
+  .datetime {
+    display: inline-block;
+  }
+
+  .datetime span {
+    color: $lightGray;
+    font-family: $openSans;
+    font-size: .8em;
+  }
+
+  .datetime a {
+    text-decoration: underline;
+    color: $lightGray;
+    font-family: $openSans;
+    font-size: .8em;
+  }
+
+  .entrybody {
+    margin-top: 31px;
+  }
+
+  .entrybody p {
+    color: $mediumGray;
+    font-family: $openSans;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: -0.8px;
+    line-height: 25px;
+  }
+
+  .entrybodylink {
+    color: $lightGray2;
+    font-family: $openSans;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: -0.8px;
+    line-height: 25px;
+  }
+
+  .entrybodylink:hover {
+    color: $darkishBlue;
+  }
+
+  #first {
+    margin-bottom: 30px;
+  }
+
+  #second {
+    margin-bottom: 30px;
+  }
+
+  #third {
+    margin-bottom: 30px;
+  }
+
+  .buttons {
+    text-decoration: none;
+  }
+
+  .entrybody h4 {
+    color: $diffBlue;
+    font-size: 1.6em;
+    font-weight: 400;
+    margin-left: 10px;
+    margin-top: 16px;
+    padding: 12px;
+    border-left: 2.5px solid #CBCBCB;
+  }
+
+  .buttons {
+    height: 30px;
+  }
+
+  .buttons img {
+    background-color: $imgGray;
+    padding: 7px;
+    margin-left: 4px;
+    float: left;
+    display: block;
+  }
+
+  .buttons span {
+    padding: 5.5px 14px 5.5px 15px;
+    margin-right: 5px;
+    background-color: $buttonGray;
+    font-family: $openSans;
+    font-size: .85em;
+    text-align: center;
+    float: left;
+    display: block;
+    color: white;
+  }
+
+  .buttons:hover img {
+    background-color: $navyBlue;
+  }
+
+  .buttons:hover span {
+    background-color: $hoverBlue;
+  }
+
+  aside {
+    width: 30%;
+    position: relative;
+    float: left;
+    display: block;
+    margin-top: 84px;
+    margin-left: 20px;
+
+    .author img {
+      display: block;
+      margin-left: 168px;
+      margin-bottom: 8px;
+    }
+
+    .author span {
+      display: block;
+      color: #0765AD;
+      font-family: $openSans;
+      font-size: 1em;
+      font-weight: 600;
+      text-align: center;
+      margin-left: 30px;
+    }
+
+    .socialmedia {
+      margin-left: 105px;
+      margin-bottom: 30px;
+    }
+
+    .socialmedia a {
+      color: #A8B7C2;
+      font-family: $openSans;
+      font-size: .85em;
+      text-decoration: none;
+      padding: 0px 5px;
+    }
+
+    .ad img {
+      margin-top: 21px;
+      margin-left: 70px;
+    }
+
+    .ad a {
+      color: #C5CFD6;
+      font-family: $openSans;
+      font-size: .85em;
+      font-weight: 600;
+      letter-spacing: -.5px;
+      text-decoration: underline;
+      float: right;
+      margin-top: 3px;
+      margin-right: 35px;
+    }
+
+    .sidebar {
+      width: 300px;
+      margin-top: 67px;
+      margin-left: 67px;
+    }
+
+    .sidebar h6 {
+      color: #146AAE;
+      font-family: $oswald;
+      font-size: 1.15em;
+      font-weight: 400;
+      margin-bottom: 0;
+    }
+
+    .sidebar p {
+      color: #A8B7C2;
+      font-family: $oswald;
+      font-size: .85em;
+      line-height: 25px;
+      margin-top: 0;
+    }
+
+    .sidebar a {
+      text-decoration: underline;
+      color: #A8B7C2;
+      font-family: $openSans;
+      font-size: 1em;
+    }
+  }
+}
+
+/*LOWER MIDDLE*/
+
+.lowermiddle {
+  width: 100%;
+  height: 480px;
+  border-top: 2px solid #E4E9EC;
+  position: relative;
+  float: left;
+  margin-top: 2px;
+
+  .lowermiddle h2 {
+    width: 100%;
+    color: #0A3451;
+    font-family: $oswald;
+    font-weight: 400;
+    font-size: 4em;
+    margin-top: 25px;
+    margin-bottom: 32px;
+    margin-left: 10px;
+    text-align: center;
+  }
+
+  .posts {
+    width: fullWidth;
+    height: 330px;
+    position: relative;
+    float: left;
+  }
+
+  .post {
+    height: 100%;
+    width: 25%;
+    float: left;
+    position: relative;
+  }
+
+  .post:after {
+    background: $postBlue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .7;
+    content: "";
+  }
+
+  .post:hover:after {
+    opacity: 0;
+    color: white;
+  }
+
+  .post:hover .posttitle {
+    color: white;
+  }
+
+  .posttitle {
+    font-family: $oswald;
+    font-size: 2em;
+    color: black;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    line-height: 40px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+  }
+}
+/*BOTTOM*/
+
+.bottom {
+  width: $fullWidth;
+  height: 95px;
+  line-height: 50px;
+  background-color: $navyBlue;
+  position: relative;
+  float: left;
+
+  footer {
+    display: inline-block;
+    position: absolute;
+    float: left;
+    margin-top: 7px;
+    margin-left: 165px;
+    background-color: $navyBlue;
+    font-size: .81em;
+    color: $darkGray;
+  }
+
+  footer img {
+    margin-right: 10px;
+    margin-top: 18px;
+  }
+
+  footer span {
+    position: relative;
+  }
+
+  nav {
+    display: inline-block;
+    position: relative;
+    float: right;
+    margin-right: 165px;
+    margin-top: 35px;
+  }
+
+  nav a {
+    text-decoration: none;
+    border-right: 1px solid $darkGray;
+    padding-right: 4px;
+    font-size: .81em;
+    color: $darkGray;
+  }
+
+  #item5 {
+    border-right: none;
+  }
+}
+
